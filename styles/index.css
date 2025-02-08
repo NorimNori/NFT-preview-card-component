@@ -36,9 +36,14 @@ a:not([class]) {
 }
 
 body {
-  background-color: #7ba6de;
+  display: grid;
+  place-items: center;
+  grid-template-rows: 1fr auto;
+  height: 100vh;
+  padding: 1rem;
+  margin: 0;
+  background-color: hsl(217, 54%, 11%);
   font-family: "Outfit", sans-serif;
-  font-weight: 600;
 }
 
 /*# sourceMappingURL=index.css.map */

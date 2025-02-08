@@ -1,5 +1,6 @@
 @use 'fonts';
 @use 'colors';
+@use 'mixins';
 
 *,
 *::before,
@@ -32,7 +33,12 @@ a:not([class]) {
 }
 
 body {
-    background-color: #7ba6de;
+    @include mixins.centerGrid;
+    grid-template-rows: 1fr auto;
+    height: 100vh;
+    padding: 1rem;
+    margin: 0;
+
+    background-color: colors.$mainBGBlue;
     font-family: 'Outfit', sans-serif;
-    font-weight: 600;
 }
