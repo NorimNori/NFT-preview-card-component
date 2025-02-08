@@ -46,4 +46,56 @@ body {
   font-family: "Outfit", sans-serif;
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 85vw;
+  max-width: 20rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  background-color: hsl(216, 50%, 16%);
+}
+.card__image {
+  border-radius: 10px;
+}
+.card__title {
+  color: hsl(0, 0%, 100%);
+}
+.card__description {
+  color: hsl(215, 51%, 70%);
+}
+.card__details {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+  padding-bottom: 1em;
+}
+.card__detail {
+  display: flex;
+  gap: 0.5em;
+}
+.card__price {
+  color: hsl(178, 100%, 50%);
+}
+.card__time {
+  color: hsl(215, 51%, 70%);
+}
+.card__creator {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 1.1em 0 0;
+  color: hsl(215, 51%, 70%);
+}
+.card__creator-name {
+  color: hsl(0, 0%, 100%);
+}
+.card__avatar {
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50px;
+  outline: 2px solid hsl(0, 0%, 100%);
+}
+
 /*# sourceMappingURL=index.css.map */

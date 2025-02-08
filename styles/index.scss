@@ -42,3 +42,66 @@ body {
     background-color: colors.$mainBGBlue;
     font-family: 'Outfit', sans-serif;
 }
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 85vw;
+    max-width: 20rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    background-color: colors.$cardBGBlue;
+
+    &__image {
+        border-radius: 10px;
+    }
+
+    &__title {
+        color: colors.$white;
+    }
+
+    &__description {
+        color: colors.$softBlue;
+    }
+
+    &__details {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid colors.$lineBlue;
+        padding-bottom: 1em;
+    }
+
+    &__detail {
+        display: flex;
+        gap: .5em;
+    }
+
+    &__price {
+        color: colors.$cyan
+    }
+
+    &__time {
+        color: colors.$softBlue
+    }
+
+    &__creator {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        padding: 1.1em 0 0;
+        color: colors.$softBlue;
+        
+        &-name {
+            color: colors.$white;
+        }
+    }
+
+    &__avatar {
+        width: 2.3rem;
+        height: 2.3rem;
+        border-radius: 50px;
+        outline: 2px solid colors.$white;
+    }
+}
