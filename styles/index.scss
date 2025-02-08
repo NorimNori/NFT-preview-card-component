@@ -57,8 +57,38 @@ body {
     box-shadow: 0 25px 50px colors.$transparentBlack, 
                 0 0 20px colors.$cardBGBlue;
 
+    @include mixins.textHover;
+
     &__image {
         border-radius: 10px;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    &__picture {
+        position: relative;
+        width: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    &__image-hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: colors.$transparentCyan;
+        transition: opacity 0.5s ease, color 0.4s ease;
+    }
+
+    &__picture:hover,
+    &__image-hover:hover {
+        opacity: 1;
     }
 
     &__content {

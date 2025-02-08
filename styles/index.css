@@ -58,8 +58,41 @@ body {
   background-color: hsl(216, 50%, 16%);
   box-shadow: 0 25px 50px hsla(0, 0%, 0%, 0.3), 0 0 20px hsl(216, 50%, 16%);
 }
+.card .card__title,
+.card .card__creator-name {
+  transition: background-color 0.3s ease, color 0.4s ease;
+}
+.card .card__title:hover,
+.card .card__creator-name:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
 .card__image {
   border-radius: 10px;
+  transition: opacity 0.5s ease-in-out;
+}
+.card__picture {
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.card__image-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: hsla(178, 100%, 50%, 0.5);
+  transition: opacity 0.5s ease, color 0.4s ease;
+}
+.card__picture:hover, .card__image-hover:hover {
+  opacity: 1;
 }
 .card__content {
   display: flex;
