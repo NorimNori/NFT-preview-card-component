@@ -156,4 +156,13 @@ body {
   outline: 2px solid hsl(0, 0%, 100%);
 }
 
+footer {
+  font-size: 0.7rem;
+  color: hsl(215, 51%, 70%);
+}
+footer a {
+  text-align: center;
+  color: hsla(178, 100%, 50%, 0.5);
+}
+
 /*# sourceMappingURL=index.css.map */

@@ -157,3 +157,13 @@ body {
         outline: 2px solid colors.$white;
     }
 }
+
+footer {
+    font-size: .7rem;
+    color: colors.$softBlue;
+
+    a { 
+        text-align: center;
+        color: colors.$transparentCyan
+    }
+}
