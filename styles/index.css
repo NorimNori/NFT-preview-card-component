@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Outfit";
+  src: url("./../assets/fonts/outfit/Outfit-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
 *,
 *::before,
 *::after {
@@ -30,6 +37,8 @@ a:not([class]) {
 
 body {
   background-color: #7ba6de;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=index.css.map */

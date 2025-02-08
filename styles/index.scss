@@ -1,3 +1,5 @@
+@import 'fonts';
+
 *,
 *::before,
 *::after {
@@ -30,4 +32,6 @@ a:not([class]) {
 
 body {
     background-color: #7ba6de;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
 }
