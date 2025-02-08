@@ -48,50 +48,72 @@ body {
     flex-direction: column;
     justify-content: space-between;
 
+    gap: 1.5em;
     width: 85vw;
     max-width: 20rem;
-    padding: 1.5rem;
+    padding: 1.4rem;
     border-radius: 10px;
     background-color: colors.$cardBGBlue;
+    box-shadow: 0 25px 50px colors.$transparentBlack, 
+                0 0 20px colors.$cardBGBlue;
 
     &__image {
         border-radius: 10px;
     }
 
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 1.1em;
+    }
+
     &__title {
         color: colors.$white;
+        @include mixins.fontsStyle(clamp(1rem, -1rem + 10vw, 1.5rem), 600);
     }
 
     &__description {
         color: colors.$softBlue;
+        @include mixins.fontsStyle(clamp(0.85rem, 0.25rem + 3vw, 1rem), 400);
+        line-height: 1.5;
     }
 
     &__details {
         display: flex;
+        align-items: center;
         justify-content: space-between;
+        gap: 1rem;
         border-bottom: 1px solid colors.$lineBlue;
         padding-bottom: 1em;
     }
 
     &__detail {
         display: flex;
+        justify-content: space-between;
+        max-width: fit-content;
+        flex-shrink: 0;
         gap: .5em;
     }
 
     &__price {
-        color: colors.$cyan
+        color: colors.$cyan;
+        white-space: nowrap;
+        @include mixins.fontsStyle(clamp(0.7rem, -0.1rem + 4vw, 0.9rem), 600);
     }
 
     &__time {
-        color: colors.$softBlue
+        color: colors.$softBlue;
+        @include mixins.fontsStyle(clamp(0.7rem, -0.1rem + 4vw, 0.9rem), 600);
     }
 
     &__creator {
         display: flex;
         align-items: center;
-        gap: 1em;
-        padding: 1.1em 0 0;
+        gap: 1.2em;
+        padding: 0 0 .3em;
+        margin-left: .1em;
         color: colors.$softBlue;
+        @include mixins.fontsStyle(clamp(0.9rem, 0.5rem + 2vw, 1rem), 600);
         
         &-name {
             color: colors.$white;
@@ -99,8 +121,8 @@ body {
     }
 
     &__avatar {
-        width: 2.3rem;
-        height: 2.3rem;
+        width: 1.7rem;
+        height: 1.7rem;
         border-radius: 50px;
         outline: 2px solid colors.$white;
     }
